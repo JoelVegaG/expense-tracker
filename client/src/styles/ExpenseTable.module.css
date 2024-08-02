@@ -1,0 +1,49 @@
+/* src/styles/ExpenseTable.module.css */
+.tableContainer {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 1.5rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cellHeader {
+  font-weight: bold;
+}
+
+.cell {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cardActions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .tableContainer {
+    display: none;
+  }
+}

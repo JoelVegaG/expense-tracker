@@ -1,0 +1,101 @@
+/* src/styles/Dashboard.module.css */
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0 1rem; /* Add padding for small screens */
+  overflow-y: auto;
+}
+
+.controlsContainer {
+  display: flex;
+  justify-content: space-between; /* Align controls to the edges */
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.controlSectionLeft,
+.controlSectionRight {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Add margin for better spacing */
+}
+
+.controlSectionLeft {
+  flex: 1; /* Allow this section to grow */
+}
+
+.controlSectionRight {
+  flex: 1; /* Allow this section to grow */
+  justify-content: flex-end; /* Align items to the right */
+}
+
+.select {
+  margin: 0 10px;
+  min-width: 120px; /* Adjust for smaller screens */
+  height: 40px;
+  font-size: 14px; /* Adjust font size for smaller screens */
+}
+
+.navButton {
+  margin: 0 5px;
+}
+
+.currentMonthButton {
+  margin: 0 10px;
+  text-transform: none;
+}
+
+.hidden {
+  display: none; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 0 0.5rem; /* Reduce padding for smaller screens */
+  }
+
+  .controlsContainer {
+    flex-direction: column; /* Stack controls vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .controlSectionLeft,
+  .controlSectionRight {
+    width: 100%; /* Make sections full width */
+    justify-content: space-between; /* Space out controls */
+    margin-bottom: 10px; /* Add spacing between sections */
+  }
+
+  .select {
+    margin: 0 5px; /* Adjust margin for smaller screens */
+    min-width: 100px; /* Adjust width for smaller screens */
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  .navButton,
+  .currentMonthButton {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .iconButton {
+    display: inline-flex; /* Show icon buttons */
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .select {
+    min-width: 80px; /* Further adjust width for very small screens */
+    font-size: 10px; /* Adjust font size for very small screens */
+  }
+
+  .navButton,
+  .currentMonthButton,
+  .addButton,
+  .saveButton {
+    font-size: 12px; /* Further adjust font size for very small screens */
+  }
+}

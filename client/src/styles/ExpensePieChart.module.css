@@ -1,0 +1,41 @@
+/* src/styles/ExpensePieChart.module.css */
+.pieChartCard {
+  width: 100%;
+  max-width: 100%; /* Ensure the card does not exceed screen width */
+  margin: 1rem auto; /* Center card horizontally */
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.pieChartWrapper {
+  display: flex;
+  justify-content: center; /* Center the pie chart horizontally */
+  align-items: center; /* Center the pie chart vertically */
+  width: 100%;
+  height: auto; /* Adjust height based on content */
+}
+
+.pieChart {
+  width: 100%;
+  height: auto; /* Ensure the pie chart adjusts height based on content */
+}
+
+.total {
+  margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pieChartCard {
+    padding: 0.5rem; 
+  }
+
+  .pieChartWrapper {
+    height: 100%; /* Adjust height for smaller screens */
+  }
+
+  .pieChart {
+    height: 100px; /* Adjust height for small screens */
+    width: 100px; /* Adjust width for small screens */
+  }
+}

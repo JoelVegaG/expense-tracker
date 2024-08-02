@@ -1,0 +1,21 @@
+/* src/styles/MainLayout.module.css */
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes at least the full height of the viewport */
+}
+
+.mainContent {
+  flex: 1; /* Allows the main content area to grow and push the footer to the bottom */
+}
+
+.fixedFooter {
+  position: relative;
+}
+
+.footerFixed {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
